@@ -4,6 +4,28 @@ class Cliente{
     private double renda;
     private char sexo;
     private int anoNascimento;
+    private boolean especial = true;
+
+    public boolean isEspecial() {
+        return especial;
+    }
+
+    public void setEspecial(boolean especial) {
+        this.especial = especial;
+    }
+
+    public Cliente(){
+        System.out.println("Criando um novo cliente");
+    }
+
+    public Cliente(double renda){
+        this();
+        //System.out.println("Criando um novo cliente");
+        this.setRenda(renda);
+        if (this.renda > 10000) {
+            this.especial = true;
+        }
+    }
 
     public void setAnoNascimento(int anoNascimento) {
         this.anoNascimento = anoNascimento;
