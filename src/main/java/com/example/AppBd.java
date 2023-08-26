@@ -10,6 +10,9 @@ public class AppBd {
             Class.forName("org.postgresql.Driver");
             var conn = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "gitpod", "");
             System.out.println("Conectado ao BD");
+
+            var statement = conn.createStatement();
+            var result = statement.executeQuery("select * from estado");
         } catch (ClassNotFoundException e) {
             // TODO Auto-generated catch block
            System.err.println("Não foi possível carregar a classe do BD" + e.getMessage());
