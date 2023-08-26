@@ -5,9 +5,18 @@ class Cliente{
     private char sexo;
     private int anoNascimento;
     private boolean especial = true;
+    private String nome;
 
     public boolean isEspecial() {
         return especial;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public void setEspecial(boolean especial) {
