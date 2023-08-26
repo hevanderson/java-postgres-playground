@@ -21,12 +21,15 @@ public class AppScanner {
 
          
         cliente01.setRenda(5000);
-        cliente01.setSexo('M');
-        cliente01.setAnoNascimento(1988);
+        //cliente01.setSexo('M');
+        //cliente01.setAnoNascimento(1988);
         cliente01.setEspecial(true);
         //cliente01.setNome("Maurício");
 
-        
+        System.out.println("Novo Cliente: ");
+        System.out.println("Nome: " + cliente01.getNome());
+        System.out.println("Ano de Nascimento: " + cliente01.getAnoNascimento() );
+        System.out.println("Renda: " + cliente01.getRenda() );        
         
     }
 }
